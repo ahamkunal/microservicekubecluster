@@ -1,0 +1,8 @@
+FROM ubuntu 
+LABEL dockerfile to build microservice application and deploy in kube cluster directly from jenkins
+CMD apt-get update && apt-get install -y 
+CMD yum -y install apache2
+COPY index.html 
+CMD yum -y install kubectl
+
+
